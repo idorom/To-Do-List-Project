@@ -1,0 +1,665 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+	overflow-y:scroll;
+	font-size: 1.0rem;
+}
+
+.our_error_label{
+	color: red;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 0.8em;
+    color: white;
+    /* text-align: left; */
+    background-color: #238a70;
+    padding-bottom: 2.5em;
+    padding-top: 0.2em;
+    z-index: 9999;
+}
+
+
+#mainNav {
+    background-color: #238a70 !important;
+    font-weight: 700;
+    color: white !important;
+    /* text-align: center; */
+	text-decoration: none;
+	direction: ltr;
+}
+
+
+#mainNav .nav-link {
+  float: left;
+  display: block;
+  color: white;
+  text-align: left;
+  font-size: 1.1rem;
+  transition: .3s;
+}
+
+
+#mainNav a{
+	color: white;
+  }
+
+
+/* Navbar links on mouse-over */
+#mainNav .nav-link:hover {
+	background-color: #ddd;
+	color: black;
+  }
+    
+  /* Style the input container */
+  .rNav {
+	float: right;
+  }
+  .lNav{
+	float: left;
+  }
+
+
+.footer {
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.8em;
+    color: white;
+    text-align: center;
+    background-color: #238a70;
+    padding-bottom: 2.5em;
+    padding-top: 0.2em;
+    z-index: 9999;
+}
+
+
+  .content-inside {
+	/* padding: 20px; */
+	padding-bottom: 0.8em;
+	padding-top: 0.8em;
+  }
+
+
+#container4,#container5{
+	position: relative;
+	margin: auto;
+	/* background-color: red; */
+    direction: ltr;
+}
+
+#container2,#container3, #container6, #container1{
+	position: relative;
+	margin: auto;
+	width: 100vw;
+	height: 100vh;
+    direction: rtl;
+  }
+  
+#container1 .row {
+	position: relative;
+	top: 12vh;
+	display: flex;
+	margin: auto;
+	/* padding-bottom: 20px; */
+}
+
+/* Create three equal columns that sits next to each other */
+#container1 .column {
+	flex: 50%; 
+	margin: auto;
+	padding-bottom: 5vh;
+}
+
+#container2 .row {
+	position: relative;
+	top: 10vh;
+	display: flex;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+/* Create three equal columns that sits next to each other */
+#container2 .column{
+	flex: 50%; 
+	margin: auto;
+	padding-bottom: 5vh;
+
+}
+
+#container3 .row, #container6 .row {
+	position: relative;
+	top: 10vh;
+	display: flex;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+/* Create three equal columns that sits next to each other */
+#container3 .column, #container6 .column {
+	flex: 50%; 
+	margin: auto;
+	padding-bottom: 5vh;
+}
+
+.login-content{
+	position: relative;
+	align-items: center;
+	text-align: center;
+}
+
+
+#icon1div{
+	position: absolute;
+	display: flex;
+	justify-content: flex-start; 
+}
+
+#icon1{
+	position: relative; 
+
+	margin: auto;
+	padding: auto; 
+	/* bottom: 8vh; */
+
+	right: 17vw; 
+	max-height: 80vh;
+    max-width: 80vw;
+}
+
+#icon2div{
+	position: absolute;
+	display: flex;
+	justify-content: flex-start;	
+}
+
+#icon2{
+	position: relative; 
+
+	margin: auto;
+	padding: auto; 
+	bottom: 3vh;
+	right: 17vw; 
+	height: 70%;
+	max-width: 44vw; 
+}
+
+#icon3div, #icon6div{
+	position: absolute;
+	display: flex;
+	justify-content: flex-start; 
+}
+
+#icon3, #icon6{
+	position: relative; 
+
+	margin: auto;
+	padding: auto; 
+	top: 6vh;
+	right: 17vw; 
+	max-height: 80vh;
+    /* max-width: 40vw; */
+}
+
+#rFormDiv3, #rFormDiv6{
+	position: relative;
+	margin: auto;
+	top: 15vh;
+}
+
+#rFormDiv2{
+	position: relative;
+	margin: auto;
+	top: 10vh;
+}
+
+
+#rFormDiv1{
+	position: relative;
+	margin: auto;
+	top: 15vh;
+}
+
+
+
+/* #icon3 , #icon6{
+	position: relative;
+	margin: auto;
+	padding: auto;
+
+	bottom: 15.075vh;
+	left: 12.5vw;
+    max-width: 44.270vw;
+
+	width:100%;
+	z-index: -1;
+} */
+
+/* #icon4, #icon6{
+	position: relative;
+	margin: auto;
+	padding: auto;
+
+	bottom:  -12.806vh;
+	left: 17.708vw;
+    max-width: 31.25vw;
+
+	width:100%;
+	z-index: -1;
+} */
+
+
+
+.img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+
+
+.img img{
+	width: 500px;
+}
+
+form{
+	width: 360px;
+}
+
+.login_hyper_link{
+	direction: ltr;
+}
+
+.login-content img{
+    height: 100px;
+}
+
+.login-content h2{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
+.login-content .input-div.one #save_password{
+	direction: ltr;
+}
+
+.h3_title{
+	color: #238a70;
+}
+
+
+.i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+	height: 40px;
+}
+
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 16px;
+	transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #38d39f;
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.input-div.focus > div > h5{
+	top: -5px;
+	font-size: 14px;
+}
+
+.input-div.focus > .i > i{
+	color: #38d39f;
+}
+
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 0.9rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+	margin-bottom: 4px;
+}
+
+.signIN_a{
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+	/* di */
+}
+
+
+a:hover{
+	color: #38d39f;
+}
+
+.btn1{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 1.0rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn1:hover{
+	background-position: right;
+}
+
+
+
+.btn-primary{
+	display: block;
+	
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 1.0rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn:hover{
+	background-position: left;
+}
+.btn-group{
+	position: relative;
+	top: 20px;
+	display: block;
+	height: 35px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	font-size: 1.0rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1;
+	cursor: pointer;
+	transition: .5s;
+}
+.btnDelete{
+	display: block;
+	width: 38px;
+	height: 30px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #e45959, #e45959, #e45959);
+	background-size: 200%;
+	
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: auto;
+	cursor: pointer;
+	transition: .5s;
+}
+.btnEdit{
+	display: block;
+	width: 38px;
+	height: 30px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #307aac, #307aac, #307aac);
+	background-size: 200%;
+	
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: auto;
+	cursor: pointer;
+	transition: .5s;
+}
+.imgDelte, .imgEdit{
+	position: relative;
+	top: -5px;
+	left: -3px;
+}
+
+#add_toDo_button{
+	position: relative;
+	top: -30px;
+}
+table{	
+	position: relative;
+	top: 10px;
+    border-collapse: collapse;
+    text-align: center;
+	margin: auto;
+	left: 0;
+	height: fit-content;  
+	width: fit-content;
+    
+}
+.table-responsive {
+    display: table;
+	font-size: 0.7rem;
+}
+th{
+	font-size: 0.8rem;
+}
+table,
+th,
+td {
+    border: 1px solid whitesmoke;
+	min-width: 0;
+}
+.modal{
+	direction: ltr;
+	
+}
+.modal-body{
+	size: 0.8rem;
+}
+
+
+@media screen and (max-width: 1050px){
+	.container{
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	form{
+		width: 290px;
+	}
+
+	.login-content h2{
+		justify-content: center;
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+
+	#container1 ,#container2, #container3, #container6{
+		grid-template-columns: 1fr;
+		justify-content: center; 
+	}
+
+	  #icon1,#icon1div #icon2, #icon2div, #icon3m, #icon3div, #icon6, #icon6div{
+		display: none;
+	}
+
+	#rFormDiv1,#rFormDiv2,#rFormDiv3,#rFormDiv6{
+		position: relative;
+		left: 0vw;
+		top: 2vh;
+		display: flex;
+		justify-content: center; 
+		 margin: auto;
+	}
+	  
+
+	.img img{
+		width: 400px;
+	}
+
+	.lNav{
+		float: none;
+	}
+	.rNav{
+		float: none;
+	}
+
+
+
+}
+
+@media screen and (max-width: 900px){
+	#container1 ,#container2, #container3, #container6{
+		grid-template-columns: 1fr;
+		justify-content: center; 
+	}
+
+
+
+	.img{
+		display: none;
+	}
+
+
+
+	.login-content{
+		justify-content: center;
+	}
+
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+	position: relative;
+	display: inline-block;
+  }
+  
+  input {
+	border: 1px solid transparent;
+	background-color: #f1f1f1;
+	padding: 10px;
+	font-size: 16px;
+  }
+  
+  input[type=text] {
+	background-color: #f1f1f1;
+	width: 100%;
+  }
+  
+  input[type=submit] {
+	background-color: DodgerBlue;
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  .autocomplete-items {
+	position: absolute;
+	border: 1px solid #d4d4d4;
+	border-bottom: none;
+	border-top: none;
+	z-index: 99;
+	/*position the autocomplete items to be the same width as the container:*/
+	top: 100%;
+	left: 0;
+	right: 0;
+  }
+  
+  .autocomplete-items div {
+	padding: 10px;
+	cursor: pointer;
+	background-color: #fff; 
+	border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+	background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+	background-color: DodgerBlue !important; 
+	color: #ffffff; 
+  }
